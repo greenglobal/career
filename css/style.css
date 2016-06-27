@@ -69,9 +69,58 @@ body {
 .banner {
     margin-top: -70px;
     height: 700px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+@-webkit-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+          animation: blink 0.7s infinite;
+}
+#typingArea {
+    font-size: 50px;
+    font-size: 3.125rem;
+    line-height: 1.5;
+    text-align: center;
+    color: #fff;
+    font-family: "Roboto Slab", sans-serif;
+    font-weight: 300;
+}
+#typingArea .sentence {
+    display: none;
 }
 
 /* Tech Stack */
@@ -97,13 +146,29 @@ body {
     padding: 10px 360px 0;
 }
 .tech-stack .list {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-top: 40px;
 }
 .tech-stack .list .item {
     padding: 25px 18px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+            align-items: center;
 }
 .tech-stack .list .image {
     display: block;
@@ -139,10 +204,17 @@ body {
     background: #fff;
     border: 1px solid #ECECEC;
     box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.09);
-    transition: border-color .3s ease;
+    -webkit-transition: border-color .3s ease;
+            transition: border-color .3s ease;
     height: 100px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .open-positions .list .item:hover {
     border-color: #02A959;
@@ -156,7 +228,10 @@ body {
     margin: auto;
 }
 .open-positions .list .text {
-    flex: 1;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
     padding-left: 10px;
     padding-right: 10px;
     font-size: 23px;
@@ -165,7 +240,8 @@ body {
     color: #616572;
     text-align: left;
     font-family: "Roboto Slab", sans-serif;
-    transition: color .3s ease;
+    -webkit-transition: color .3s ease;
+            transition: color .3s ease;
 }
 .open-positions .list .item:hover .text {
     color: #02A959;
@@ -194,21 +270,39 @@ body {
     padding: 10px 360px 0;
 }
 .our-vision .list {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
     margin-top: 65px;
 }
 .our-vision .list .item {
     padding-left: 35px;
     padding-right: 35px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin-bottom: 30px;
 }
 .our-vision .list .image {
     display: block;
-    flex: 1;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
 }
 .our-vision .list .text {
     color: #4A4A4A;
@@ -240,16 +334,35 @@ body {
     font-family: "Roboto Slab", sans-serif;
 }
 .contact .center-list {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 .contact .list {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 .contact .list .item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-top: 65px;
 }
 .contact .list .image {
@@ -310,17 +423,24 @@ body {
         font-size: 12px;
     }
 
+    .banner {
+        height: 500px;
+    }
+
     .logo-image {
         margin: auto;
     }
 
-    .typed-cursor {
-        display: none;
-    }
-
     .contact .list .item {
-        flex-direction: column;
-        justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
     .contact .list .text-wrap {
         margin-left: 0;
@@ -330,33 +450,4 @@ body {
     .contact .list .text-content {
         margin-top: 15px;
     }
-}
-
-@keyframes blink {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-.cursor{
-  opacity: 1;
-  animation: blink 0.7s infinite;
-}
-
-#typingArea {
-  font-size: 50px;
-  line-height: 1.5;
-  text-align: center;
-  color: #fff;
-  font-family: "Roboto Slab", sans-serif;
-  font-weight: 300;
-}
-
-#typingArea .sentence {
-  display: none;
 }
