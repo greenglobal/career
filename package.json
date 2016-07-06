@@ -1,0 +1,76 @@
+{
+  "version": "0.1.0",
+  "name": "web-starter",
+  "description": "Smart tool for web developer to build websites with modern utils",
+  "homepage": "http://techpush.xyz",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ndaidong/web-starter"
+  },
+  "author": "@ndaidong",
+  "main": "./index.js",
+  "engines": {
+    "node": ">= 6.0"
+  },
+  "scripts": {
+    "start": "jake start && node server --port 8181",
+    "release": "jake release && http-server dist -p 8182 -o",
+    "reset": "jake reset"
+  },
+  "devDependencies": {
+    "babel-core": "latest",
+    "babel-plugin-transform-remove-strict-mode": "latest",
+    "babel-plugin-transform-strict-mode": "latest",
+    "babel-preset-es2015": "latest",
+    "bellajs": "latest",
+    "cheerio": "latest",
+    "copy-dir": "latest",
+    "cssnano": "latest",
+    "express": "latest",
+    "handlebars": "latest",
+    "http-server": "latest",
+    "imagemin": "latest",
+    "imagemin-mozjpeg": "latest",
+    "imagemin-pngquant": "latest",
+    "jake": "latest",
+    "minimist": "latest",
+    "mkdirp": "latest",
+    "postcss": "latest",
+    "postcss-cssnext": "latest",
+    "postcss-filter-plugins": "latest",
+    "postcss-mixins": "latest",
+    "postcss-nested": "latest",
+    "promise-wtf": "latest",
+    "recursive-readdir": "latest",
+    "shift-codegen": "latest",
+    "shift-parser": "latest",
+    "svgo": "latest"
+  },
+  "keywords": [
+    "starter-kit",
+    "website",
+    "builder",
+    "generator"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    "ndaidong <ndaidong@gmail.com>"
+  ],
+  "bugs": {
+    "url": "https://github.com/ndaidong/web-starter/issues"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "builder": {
+    "sourceDir": "src",
+    "distDir": "dist",
+    "css": {
+      "bootstrap": "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+    },
+    "javascript": {
+      "doc": "https://rawgit.com/ndaidong/doc/master/dist/doc.min.js",
+      "typewritter": "https://rawgit.com/ndaidong/typewritter/master/dist/typewritter-effect.min.js"
+    }
+  }
+}
