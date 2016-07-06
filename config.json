@@ -1,0 +1,23 @@
+{
+  "meta": {
+    "name": "gg-career",
+    "title": "GreenGlobal - Career",
+    "description": "Green Global Co., Ltd in Da Nang city recruits developer, designer and IT consultant...",
+    "keywords": "Green Global, Toan Cau Xanh, tuyen dung, recruitment, career, open position, hiring, IT consultant, web designer, web developer",
+    "url": "http://127.0.0.1:8181",
+    "author": "@greenglobal",
+    "image": "http://127.0.0.1:8181/images/brand/greenglobal.png"
+  },
+  "imgBrand": "images/brand",
+  "contact": {
+    "email": "contact@greenglobal.vn",
+    "phone": "05113 833 666"
+  },
+  "messages": [
+    "Are you experienced developer?",
+    "Are you talented designer?",
+    "Or you are good in solution consulting?",
+    "Are you looking for new challenge?",
+    "Here may be your chance..."
+  ]
+}
