@@ -1,11 +1,11 @@
 {
   "version": "0.1.0",
-  "name": "web-starter",
-  "description": "Smart tool for web developer to build websites with modern utils",
-  "homepage": "http://techpush.xyz",
+  "name": "career",
+  "description": "Green Global Co., Ltd in Da Nang city recruits developer, designer and IT consultant...",
+  "homepage": "http://career.greenglobal.vn",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ndaidong/web-starter"
+    "url": "https://github.com/greenglobal/career"
   },
   "author": "@ndaidong",
   "main": "./index.js",
@@ -57,7 +57,7 @@
     "ndaidong <ndaidong@gmail.com>"
   ],
   "bugs": {
-    "url": "https://github.com/ndaidong/web-starter/issues"
+    "url": "https://github.com/greenglobal/career/issues"
   },
   "directories": {
     "test": "test"
