@@ -43,253 +43,88 @@
     <link rel="mask-icon" href="{{imgBrand}}/safari-pinned-tab.svg" color="#5bbad5">
     <link rel="shortcut icon" href="{{imgBrand}}/favicon.ico">
 
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/vendor/bootstrap.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto+Slab|Roboto:400,300,500,700">
+    <link rel="stylesheet" type="text/css" href="css/vendor/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/parallax-effect.css">
+    <link rel="stylesheet" type="text/css" href="css/typing-effect.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
-<body>
-    <header class="header">
-        <div class="container">
-            <h1 class="logo">
-                <a class="logo-link" href="#">
-                    <img class="logo-image" src="images/logo.svg" alt="GreenGlobal">
-                </a>
-            </h1>
-            <div class="banner">
-              <div id="typingArea">
-                <p>Looking for new chance?</p>
-                {{#each messages}}
-                  <p class="sentence">{{this}}</p>
-                {{/each}}
+  <body>
+    <div class="parallax">
+      <div id="group2" class="parallax__group">
+        <div id="bannerText" class="parallax__layer parallax__layer--base">
+          <div class="title">Hello world</div>
+        </div>
+        <div class="parallax__layer parallax__layer--back">
+          <div id="bannerCanvas"></div>
+        </div>
+      </div>
+      <div id="group3" class="parallax__group">
+        <div class="parallax__layer parallax__layer--fore">
+          <div class="title">Text Layer 3</div>
+        </div>
+        <div class="parallax__layer parallax__layer--base">
+          <div class="title">Background Layer 3</div>
+        </div>
+      </div>
+      <div id="group4" class="parallax__group">
+        <div class="parallax__layer parallax__layer--base">
+          <div class="title">Text Layer 4</div>
+        </div>
+        <div class="parallax__layer parallax__layer--back">
+          <div class="title">Background Layer 4</div>
+        </div>
+        <div class="parallax__layer parallax__layer--deep">
+          <div class="title">Deep Background Layer 4</div>
+        </div>
+      </div>
+      <div id="group5" class="parallax__group">
+        <div class="parallax__layer parallax__layer--fore">
+          <div class="title">Text Layer 5</div>
+        </div>
+        <div class="parallax__layer parallax__layer--base">
+          <div class="title">Base Layer 5</div>
+        </div>
+      </div>
+      <div id="group6" class="parallax__group">
+        <div class="parallax__layer parallax__layer--back">
+          <div class="title">Background Layer 6</div>
+        </div>
+        <div class="parallax__layer parallax__layer--base">
+          <div class="title">Text Layer 6</div>
+        </div>
+      </div>
+
+      <div class="footer-section parallax__group">
+        <div class="parallax__layer parallax__layer--base">
+          <section class="contact">
+            <div class="container">
+              <p class="heading-small">Don't be shy,</p>
+              <p class="heading-large">Let't join together!</p>
+              <div class="center-list">
+                <ul>
+                  <li class="icon-phone">
+                    <p class="text-title">Call us</p>
+                    <p class="text-content">{{contact.phone}}</p>
+                  </li>
+                  <li class="icon-mail">
+                    <p class="text-title">Send Email</p>
+                    <p class="text-content">
+                      <a href="mailto:{{contact.email}}">{{contact.email}}</a>
+                    </p>
+                  </li>
+                </ul>
               </div>
             </div>
+          </section>
         </div>
-    </header>
+      </div>
 
-    <section class="tech-stack">
-        <div class="container">
-            <h2 class="title">Tech Stack</h2>
-            <p class="desc">A variation of the ordinary lorem ipsum text has been used in typesetting since the 1960s or earlier.</p>
-            <ul class="list">
-                <li class="item">
-                    <a class="link" href="#">
-                        <img class="image" src="images/image-01.png" alt="">
-                    </a>
-                </li>
-                <li class="item">
-                    <a class="link" href="#">
-                        <img class="image" src="images/image-02.png" alt="">
-                    </a>
-                </li>
-                <li class="item">
-                    <a class="link" href="#">
-                        <img class="image" src="images/image-03.png" alt="">
-                    </a>
-                </li>
-                <li class="item">
-                    <a class="link" href="#">
-                        <img class="image" src="images/image-04.png" alt="">
-                    </a>
-                </li>
-                <li class="item">
-                    <a class="link" href="#">
-                        <img class="image" src="images/image-05.png" alt="">
-                    </a>
-                </li>
-                <li class="item">
-                    <a class="link" href="#">
-                        <img class="image" src="images/image-06.png" alt="">
-                    </a>
-                </li>
-                <li class="item">
-                    <a class="link" href="#">
-                        <img class="image" src="images/image-07.png" alt="">
-                    </a>
-                </li>
-                <li class="item">
-                    <a class="link" href="#">
-                        <img class="image" src="images/image-08.png" alt="">
-                    </a>
-                </li>
-                <li class="item">
-                    <a class="link" href="#">
-                        <img class="image" src="images/image-09.png" alt="">
-                    </a>
-                </li>
-                <li class="item">
-                    <a class="link" href="#">
-                        <img class="image" src="images/image-10.png" alt="">
-                    </a>
-                </li>
-                <li class="item">
-                    <a class="link" href="#">
-                        <img class="image" src="images/image-11.png" alt="">
-                    </a>
-                </li>
-                <li class="item">
-                    <a class="link" href="#">
-                        <img class="image" src="images/image-12.png" alt="">
-                    </a>
-                </li>
-                <li class="item">
-                    <a class="link" href="#">
-                        <img class="image" src="images/image-13.png" alt="">
-                    </a>
-                </li>
-                <li class="item">
-                    <a class="link" href="#">
-                        <img class="image" src="images/image-14.png" alt="">
-                    </a>
-                </li>
-                <li class="item">
-                    <a class="link" href="#">
-                        <img class="image" src="images/image-15.png" alt="">
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </section>
-
-    <section class="open-positions">
-        <div class="container">
-            <h2 class="title">Open Positions</h2>
-            <p class="desc">A variation of the ordinary lorem ipsum text has been used in typesetting since the 1960s or earlier.</p>
-            <div class="row list">
-                <div class="col-md-4 col-sm-6">
-                    <div class="item">
-                        <div class="image-wrap">
-                            <img class="image" src="images/php.svg" alt="PHP Developer">
-                        </div>
-                        <p class="text">PHP Developer</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="item">
-                        <div class="image-wrap">
-                            <img class="image" src="images/java.svg" alt="Java Developer">
-                        </div>
-                        <p class="text">Java Developer</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="item">
-                        <div class="image-wrap">
-                            <img class="image" src="images/linux.svg" alt="Experienced Linux Developer (New)">
-                        </div>
-                        <p class="text">Experienced Linux Developer (New)</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="item">
-                        <div class="image-wrap">
-                            <img class="image" src="images/qa.svg" alt="QA Engineers">
-                        </div>
-                        <p class="text">QA Engineers</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="item">
-                        <div class="image-wrap">
-                            <img class="image" src="images/salesforce.svg" alt="Salesforce Senior Developer">
-                        </div>
-                        <p class="text">Salesforce Senior Developer</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="item">
-                        <div class="image-wrap">
-                            <img class="image" src="images/java.svg" alt="Java Developer">
-                        </div>
-                        <p class="text">Java Developer</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="item">
-                        <div class="image-wrap">
-                            <img class="image" src="images/php.svg" alt="PHP Developer">
-                        </div>
-                        <p class="text">PHP Developer</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="item">
-                        <div class="image-wrap">
-                            <img class="image" src="images/java.svg" alt="Java Developer">
-                        </div>
-                        <p class="text">Java Developer</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="item">
-                        <div class="image-wrap">
-                            <img class="image" src="images/linux.svg" alt="Experienced Linux Developer (New)">
-                        </div>
-                        <p class="text">Experienced Linux Developer (New)</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="our-vision">
-        <div class="container">
-            <h2 class="title">Our Vision</h2>
-            <p class="desc">A variation of the ordinary lorem ipsum text has been used in typesetting since the 1960s or earlier.</p>
-            <ul class="list">
-                <li class="item">
-                    <img class="image" src="images/usa.svg" alt="USA">
-                    <p class="text">USA</p>
-                </li>
-                <li class="item">
-                    <img class="image" src="images/australia.svg" alt="Australia">
-                    <p class="text">Australia</p>
-                </li>
-                <li class="item">
-                    <img class="image" src="images/japan.svg" alt="Japan">
-                    <p class="text">Japan</p>
-                </li>
-                <li class="item">
-                    <img class="image" src="images/singapore.svg" alt="Singapore">
-                    <p class="text">Singapore</p>
-                </li>
-                <li class="item">
-                    <img class="image" src="images/vietnam.svg" alt="Viet Nam">
-                    <p class="text">Viet Nam</p>
-                </li>
-            </ul>
-        </div>
-    </section>
-
-    <section class="contact">
-        <div class="container">
-            <p class="heading-small">Don't be shy,</p>
-            <p class="heading-large">Let't join together!</p>
-            <div class="center-list">
-                <ul class="list">
-                    <li class="item">
-                        <img class="image" src="images/phone.svg" alt="Phone Icon">
-                        <div class="text-wrap">
-                            <p class="text-title">Call us</p>
-                            <p class="text-content">{{contact.phone}}</p>
-                        </div>
-                    </li>
-                    <li class="item">
-                        <img class="image" src="images/mail.svg" alt="Mail Icon">
-                        <div class="text-wrap">
-                            <p class="text-title">Send Email</p>
-                            <p class="text-content">
-                                <a class="link" href="mailto:{{contact.email}}">{{contact.email}}</a>
-                            </p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
+    </div>
     <script type="text/javascript" src="js/vendor/doc.js"></script>
     <script type="text/javascript" src="js/vendor/typewritter.js"></script>
+    <script type="text/javascript" src="js/vendor/three.js"></script>
+    <script type="text/javascript" src="js/libs/building-effect.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
-</body>
+  </body>
 </html>
