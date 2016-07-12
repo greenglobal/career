@@ -1,0 +1,28 @@
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#typingArea {
+  font-size: 50px;
+  font-size: 3.125rem;
+  line-height: 1.5;
+  text-align: center;
+  color: #000;
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 300;
+  .sentence {
+    display: none;
+  }
+  .cursor{
+    opacity: 1;
+    animation: blink 0.7s infinite;
+  }
+}

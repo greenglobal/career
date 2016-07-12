@@ -1,0 +1,128 @@
+/* Parallax base styles
+  --------------------------------------------- */
+.parallax {
+  height: 500px;
+  /* fallback for older browsers */
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-perspective: 300px;
+  -webkit-overflow-scrolling: touch;
+  perspective: 300px;
+}
+
+.parallax__group {
+  position: relative;
+  height: 500px;
+  /* fallback for older browsers */
+  height: 100vh;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.parallax__layer--fore {
+  -webkit-transform: translateZ(90px) scale(0.7);
+  transform: translateZ(90px) scale(0.7);
+  z-index: 1;
+}
+
+.parallax__layer--base {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  z-index: 4;
+}
+
+.parallax__layer--back {
+  -webkit-transform: translateZ(-300px) scale(2);
+  transform: translateZ(-300px) scale(2);
+  z-index: 3;
+}
+
+.parallax__layer--deep {
+  -webkit-transform: translateZ(-600px) scale(3);
+  transform: translateZ(-600px) scale(3);
+  z-index: 2;
+}
+
+/* custom styles
+--------------------------------------------- */
+.parallax {
+  font-size: 200%;
+}
+
+/* centre the content in the parallax layers */
+.title {
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/* style the groups
+--------------------------------------------- */
+#group2 {
+  z-index: 3;
+  left: -8px;
+  /* slide under groups 1 and 3 */
+}
+
+#group2 .parallax__layer--back {
+  background: #7bd266;
+}
+
+#group3 {
+  z-index: 4;
+  /* slide over group 2 and 4 */
+}
+
+#group3 .parallax__layer--base {
+  background: #99d865;
+}
+
+#group4 {
+  z-index: 2;
+  left: -16px;
+  /* slide under group 3 and 5 */
+}
+
+#group4 .parallax__layer--deep {
+  background: #b8df65;
+}
+
+#group5 {
+  z-index: 3;
+  /* slide over group 4 and 6 */
+}
+
+#group5 .parallax__layer--base {
+  background: #d6e564;
+}
+
+#group6 {
+  z-index: 2;
+  left: -8px;
+  /* slide under group 5 and 7 */
+}
+
+#group6 .parallax__layer--back {
+  background: #f5eb64;
+}
+
+.footer-section {
+  z-index: 3;
+  /* slide over group 7 */
+}
+
+.footer-section .parallax__layer--base {
+  background: #fff164;
+}

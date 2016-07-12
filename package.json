@@ -1,5 +1,5 @@
 {
-  "version": "0.1.0",
+  "version": "0.1.2",
   "name": "career",
   "description": "Green Global Co., Ltd in Da Nang city recruits developer, designer and IT consultant...",
   "homepage": "http://career.greenglobal.vn",
@@ -13,9 +13,10 @@
     "node": ">= 6.0"
   },
   "scripts": {
-    "start": "jake start && node server --port 8181",
-    "release": "jake release && http-server dist -p 8182 -o",
-    "reset": "jake reset"
+    "setup": "node ./bin/setup",
+    "start": "npm run setup && node server -p 8181",
+    "release": "node ./bin/release && http-server dist -p 8182 -o",
+    "reset": "node ./bin/reset"
   },
   "devDependencies": {
     "babel-core": "latest",
@@ -25,23 +26,25 @@
     "bellajs": "latest",
     "cheerio": "latest",
     "copy-dir": "latest",
+    "css-mqpacker": "latest",
     "cssnano": "latest",
     "express": "latest",
     "handlebars": "latest",
+    "html-minifier": "latest",
     "http-server": "latest",
     "imagemin": "latest",
     "imagemin-mozjpeg": "latest",
     "imagemin-pngquant": "latest",
-    "jake": "latest",
     "minimist": "latest",
     "mkdirp": "latest",
     "postcss": "latest",
     "postcss-cssnext": "latest",
     "postcss-filter-plugins": "latest",
-    "postcss-mixins": "latest",
-    "postcss-nested": "latest",
+    "postcss-scss": "latest",
+    "precss": "latest",
     "promise-wtf": "latest",
     "recursive-readdir": "latest",
+    "rucksack-css": "latest",
     "shift-codegen": "latest",
     "shift-parser": "latest",
     "svgo": "latest"
@@ -66,10 +69,11 @@
     "sourceDir": "src",
     "distDir": "dist",
     "css": {
-      "bootstrap": "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+      "normalize": "https://necolas.github.io/normalize.css/4.1.1/normalize.css"
     },
     "javascript": {
       "doc": "https://rawgit.com/ndaidong/doc/master/dist/doc.min.js",
+      "three": "https://cdnjs.cloudflare.com/ajax/libs/three.js/r74/three.min.js",
       "typewritter": "https://rawgit.com/ndaidong/typewritter/master/dist/typewritter-effect.min.js"
     }
   }
