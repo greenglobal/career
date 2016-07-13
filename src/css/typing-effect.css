@@ -11,8 +11,9 @@
 }
 
 #typingArea {
-  font-size: 50px;
-  font-size: 3.125rem;
+
+  height: 100%;
+  font-size: 40px;
   line-height: 1.5;
   text-align: center;
   color: #000;
@@ -24,5 +25,10 @@
   .cursor{
     opacity: 1;
     animation: blink 0.7s infinite;
+  }
+  span {
+    position: relative;
+    top: 40%;
+    transform: translateY(-40%);
   }
 }

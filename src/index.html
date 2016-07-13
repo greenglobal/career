@@ -53,7 +53,15 @@
     <div class="parallax">
       <div id="group2" class="parallax__group">
         <div id="bannerText" class="parallax__layer parallax__layer--base">
-          <div class="title">Hello world</div>
+          <div class="header-bar">
+            <div class="logo"></div>
+          </div>
+          <div id="typingArea">
+            <span>Looking for new chance?</span>
+            {{#each messages}}
+              <span class="sentence">{{this}}</span>
+            {{/each}}
+          </div>
         </div>
         <div class="parallax__layer parallax__layer--back">
           <div id="bannerCanvas"></div>
