@@ -69,15 +69,6 @@
 
 /* style the groups
 --------------------------------------------- */
-#group2 {
-  z-index: 3;
-  left: -8px;
-  /* slide under groups 1 and 3 */
-}
-
-#group2 .parallax__layer--back {
-  background: #7bd266;
-}
 
 #group3 {
   z-index: 4;
