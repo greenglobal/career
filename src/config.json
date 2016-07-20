@@ -9,13 +9,14 @@
     "image": "http://127.0.0.1:8181/images/brand/greenglobal.png"
   },
   "imgBrand": "images/brand",
+  "logoLink": "http://greenglobal.vn",
   "contact": {
     "email": "contact@greenglobal.vn",
     "phone": "05113 833 666"
   },
   "messages": [
     "Are you experienced developer?",
-    "Are you talented designer?",
+    "Are you talented and creative designer?",
     "Or you are good in solution consulting?",
     "Are you looking for new challenge?",
     "Here may be your chance..."
