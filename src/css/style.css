@@ -15,6 +15,24 @@ body, html {
   background-color: #fff;
 }
 
+.header-section {
+  z-index: 3;
+  left: -8px;
+  .logo {
+    display: block;
+    margin: 10px auto;
+    height: 100px;
+    width: 100px;
+    background: transparent url(/images/brand/greenglobal-logo.png) no-repeat center center;
+    background-size: cover;
+    cursor: pointer;
+  }
+}
+
+.header-section .parallax__layer--back {
+  background: #7bd266;
+}
+
 .footer-section {
   height: 600px;
   .parallax__layer--base {
